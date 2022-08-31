@@ -1,0 +1,31 @@
+h2{
+    position: relative;
+    font-size: 5rem;
+    font-family: 'Times New Roman', Times, serif;
+    -webkit-text-stroke: 0.3vh red;
+    text-transform: uppercase;
+    background-color: cyan;
+}
+h2::before{
+    content: attr(data-text);
+    position : absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    color: #6dc06d;
+    -webkit-text-stroke: 0vh red;
+    border-right: 2px solid #4fed41;
+    overflow:hidden;
+    /* animation: Loading 1s steps(100) infinite; */
+    animation: Loading 6s linear infinite;
+    -webkit-animation: Loading 6s linear infinite;
+}
+@keyframes Loading{
+    0%{
+        width: 0%;
+    }
+    70%{
+        width: 100%;
+    }
+}
