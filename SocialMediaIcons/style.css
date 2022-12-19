@@ -1,0 +1,14 @@
+.icons{
+    display : flex;
+    column-gap : 25px;
+}
+icon{
+    width: 60px;
+    height : 60px;
+    display : inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 26px;
+    color : #fff;
+}
